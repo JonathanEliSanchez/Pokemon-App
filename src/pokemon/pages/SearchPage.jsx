@@ -11,8 +11,6 @@ export const SearchPage = () => {
   const location = useLocation();
 
   const {q = ''} = queryString.parse( location.search );
-  
-
   const {pokemon} =  useDataPerNamePokemon( q );
 
 
